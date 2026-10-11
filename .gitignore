@@ -1,0 +1,38 @@
+# ---- build output ----------------------------------------------------------
+build*/
+cmake-build-*/
+out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+build.ninja
+.ninja_deps
+.ninja_log
+compile_commands.json
+*.o
+*.obj
+*.exe
+*.ilk
+*.pdb
+*.exp
+*.lib
+
+# ---- ide -------------------------------------------------------------------
+.idea/
+*.iml
+.vscode/
+.cache/
+*.user
+
+# ---- os --------------------------------------------------------------------
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ---- key material: never commit --------------------------------------------
+# the Ed25519 private key can mint valid licences for every build patched with
+# the matching public key -- keep it local, always
+*.key
+keys/
+*_keygen.key
+snipaste_keygen.*
